@@ -45,7 +45,7 @@
       this.img = img
       // creat canvas
       var canvas = this.canvas = document.createElement('canvas')
-      this.ctx = canvas.getContext('2d')
+      this.ctx = canvas.getContext('2d',{willReadFrequently:true})
       // copy attributes from img to canvas
       canvas.className = img.className
       canvas.id = img.id
